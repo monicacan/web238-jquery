@@ -32,3 +32,32 @@ li.navhover {
     border: solid 1px grey;
     padding: 1em;
 }
+
+.accordion {
+    padding-bottom: 0.5em;
+    max-width: 500px;
+}
+
+.FAQ-wrapper {
+    padding: 0.5em 0;
+    border-bottom: 1px dotted black;
+}
+
+.FAQ-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.FAQ-heading > h3 {
+    margin: 0;
+}
+
+.bi-chevron-down {
+    transition: transform 0.3s ease;
+}
+  
+.bi-chevron-down.rotated {
+    transform: rotate(180deg);
+}
