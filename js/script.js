@@ -21,4 +21,19 @@ $(document).ready(function() {
     // Highlight every other nav item to seperate the rows visually.
     $('tr:even').addClass('highlight');
 
+    //Accordion interaction for FAQs
+    $('.FAQ-content').hide();
+
+    $('.accordion').on('click', '.FAQ-heading', function() {
+
+        $(this).toggleClass('active').next().slideToggle();
+
+        $('.FAQ-content').not($(this).next()).slideUp(300);
+                    
+        $(this).siblings().removeClass('active');
+
+        // Toggle the rotation of the chevron
+        $(this).find('.bi-chevron-down').toggleClass('rotated');
+
+      });
 });
