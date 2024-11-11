@@ -154,10 +154,126 @@ li.navhover {
     text-decoration: none;
     cursor: pointer;
   }
+
+/*-----AGENDA PAGE STYLING-----*/
+/* Container styling */
+.tabs-container {
+  max-width: 800px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation tabs styling */
+#info-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-bottom: 2px solid #e0e0e0;
+  display: flex;
+  gap: 2px;
+}
+
+#info-nav li {
+  margin: 0;
+}
+
+#info-nav a {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #666;
+  background-color: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+  transition: all 0.3s ease;
+}
+
+#info-nav a:hover {
+  background-color: #e9e9e9;
+  color: #333;
+}
+
+#info-nav a.current {
+  background-color: #fff;
+  color: #2196F3;
+  border-bottom: 2px solid #2196F3;
+  margin-bottom: -2px;
+}
+
+/* Content area styling */
+#info {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-top: none;
+}
+
+/* Conference schedule styling */
+.conference-schedule h2 {
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+.conference-schedule table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.conference-schedule th {
+  background: #f5f7f9;
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.conference-schedule td {
+  padding: 16px;
+  border-bottom: 1px solid #e0e0e0;
+  vertical-align: top;
+}
+
+.conference-schedule tr:last-child td {
+  border-bottom: none;
+}
+
+.conference-schedule td:first-child {
+  width: 150px;
+  color: #666;
+  font-weight: 500;
+}
+
+.conference-schedule td strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.conference-schedule td p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+/*end*/
+
   
   /* 100% Image Width on Smaller Screens */
   @media only screen and (max-width: 700px){
     .modal-content {
       width: 100%;
+    }
+
+    .conference-schedule table {
+      display: block;
+      overflow-x: auto;
+    }
+  
+    .conference-schedule td:first-child {
+        width: 120px;
     }
   }

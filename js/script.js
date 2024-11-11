@@ -36,5 +36,31 @@ $(document).ready(function() {
         $(this).find('.bi-chevron-down').toggleClass('rotated');
 
       });
+    
+    //Tabs on the agenda page
+    /*$('#info p:not(:first)').hide();
 
+    $('#info-nav li').click(function(event) {
+      event.preventDefault();
+      $('#info p').hide();
+      $('#info-nav .current').removeClass("current");
+      $(this).addClass('current');
+      
+      var clicked = $(this).find('a:first').attr('href');
+      var tabId = clicked.substring(1);
+      $('#' + tabId).fadeIn('fast');
+    }).eq(0).addClass('current');*/
+
+    $('#info div[id^="tab"]:not(:first)').hide();
+
+    $('#info-nav li').click(function(event) {
+        event.preventDefault();
+        $('#info div[id^="tab"]').hide();
+        $('#info-nav .current').removeClass("current");
+        $(this).addClass('current');
+        
+        var clicked = $(this).find('a:first').attr('href');
+        var tabId = clicked.substring(1);
+        $('#' + tabId).fadeIn('fast');
+    }).eq(0).addClass('current');
 });

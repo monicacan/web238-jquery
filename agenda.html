@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <title>Lab 4</title>
+</head>
+<body>
+    <div id="wrapper-disclaimer">
+        <div id="container-disclaimer">
+            <input type="button" id="toggleButton" value="Toggle Cookies" />
+
+            <div id="disclaimer">
+                <p>This website uses cookies, pixel tags, and local storage for performance, personalization, and marketing purposes.</p>
+                <div>
+                    <button>Allow All</button>
+                    <button>No Thanks</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h1>Config's a conference for people who build products</h1>
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="agenda.html">Agenda</a></li>
+                <li class="nav-item"><a href="speakers.html">Speakers</a></li>
+                <li class="nav-item">Register</li>
+            </ul>
+        </nav>
+    </div>
+
+    <h1>CONFIG</h1>
+
+    <div>
+        <p>June 26-27, 2024</p>
+        <p>Moscone Center, San Francisco, CA</p>
+        <p>In person & Virtual</p>
+    </div>
+    
+    <section>
+        <h1>Agenda</h1>
+
+        <div class="tabs-container">
+            <ul id="info-nav">
+                <li><a href="#tab1" class="current">June 26</a></li>
+                <li><a href="#tab2">June 27</a></li>
+            </ul>
+
+            <div id="info">
+                <div>
+                    <div id="tab1" class="conference-schedule">
+                        <h2>Day 1</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Time</th>
+                                    <th>Session</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>8:30 - 9:30</td>
+                                    <td>
+                                        <strong>Registration & Breakfast</strong>
+                                        <p>Pick up your conference badge and enjoy networking over coffee</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>9:30 - 10:30</td>
+                                    <td>
+                                        <strong>Keynote: The Future of Design Systems</strong>
+                                        <p>Sarah Chen, Head of Design at Figma</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10:45 - 11:30</td>
+                                    <td>
+                                        <strong>Workshop: Auto Layout Mastery</strong>
+                                        <p>Advanced techniques for responsive designs</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>11:45 - 12:30</td>
+                                    <td>
+                                        <strong>Panel: Collaboration in the Age of AI</strong>
+                                        <p>Industry leaders discuss the impact of AI on design workflows</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>12:30 - 1:30</td>
+                                    <td>
+                                        <strong>Lunch Break</strong>
+                                        <p>Networking lunch in the main hall</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1:45 - 2:30</td>
+                                    <td>
+                                        <strong>Variables in Design Systems</strong>
+                                        <p>Building flexible and maintainable component libraries</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2:45 - 3:30</td>
+                                    <td>
+                                        <strong>Interactive Prototyping</strong>
+                                        <p>Creating advanced interactions and animations</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3:45 - 4:30</td>
+                                    <td>
+                                        <strong>Dev Handoff Best Practices</strong>
+                                        <p>Streamlining the designer-developer workflow</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4:45 - 5:30</td>
+                                    <td>
+                                        <strong>Closing Keynote: Design at Scale</strong>
+                                        <p>Managing design systems for enterprise organizations</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="tab2" class="conference-schedule">
+                        <h2>Day 2</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Time</th>
+                                    <th>Session</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>9:00 - 9:30</td>
+                                    <td>
+                                        <strong>Morning Coffee & Networking</strong>
+                                        <p>Start your day with fellow designers and developers</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>9:30 - 10:30</td>
+                                    <td>
+                                        <strong>Keynote: Designing for the Next Decade</strong>
+                                        <p>Marcus Zhang, Principal Designer at Google</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10:45 - 11:30</td>
+                                    <td>
+                                        <strong>Workshop: Advanced Component Properties</strong>
+                                        <p>Creating flexible, reusable components for enterprise teams</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>11:45 - 12:30</td>
+                                    <td>
+                                        <strong>Accessibility in Design Systems</strong>
+                                        <p>Building inclusive design patterns and components</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>12:30 - 1:30</td>
+                                    <td>
+                                        <strong>Lunch & Lightning Talks</strong>
+                                        <p>Quick presentations from community members while networking</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1:45 - 2:30</td>
+                                    <td>
+                                        <strong>Plugins & Widgets Development</strong>
+                                        <p>Creating custom tools to enhance your Figma workflow</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2:45 - 3:30</td>
+                                    <td>
+                                        <strong>Cross-Platform Design Strategy</strong>
+                                        <p>Maintaining consistency across web, mobile, and desktop</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3:45 - 4:30</td>
+                                    <td>
+                                        <strong>Future of Design Tools</strong>
+                                        <p>Panel discussion on emerging technologies and methodologies</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4:45 - 5:30</td>
+                                    <td>
+                                        <strong>Closing Remarks & Community Awards</strong>
+                                        <p>Celebrating outstanding contributions to the Figma community</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>6:00 - 9:00</td>
+                                    <td>
+                                        <strong>After Party</strong>
+                                        <p>Join us for food, drinks, and music at the Skyline Lounge</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </section>
+    
+</body>
+</html>
